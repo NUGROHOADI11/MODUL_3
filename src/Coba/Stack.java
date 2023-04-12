@@ -1,22 +1,22 @@
-package Latian1;
+package Coba;
 
 public class Stack {
     private int maxSize;
-    private Long[] stackArray;
+    private String[] stackArray;
     private int top;
 
     public Stack(int a){
         maxSize = 5;
-        stackArray = new Long[maxSize];
+        stackArray = new String[maxSize];
         top = -1;
     }
-    public void push(long j){
+    public void push(String j){
         stackArray[++top] = j;
     }
-    public long pop(){
+    public String pop(){
         return stackArray[top--];
     }
-    public long peek(){
+    public String peek(){
         return stackArray[top];
     }
     public boolean isEmpty(){
@@ -24,5 +24,8 @@ public class Stack {
     }
     public boolean isPull(){
         return (top == maxSize-1);
+    }
+    public int search(String string) {
+        return 0;
     }
 }
